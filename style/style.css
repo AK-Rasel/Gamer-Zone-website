@@ -157,6 +157,7 @@ nav .right-container ul li a{
 /* online gamer style */
 .online-games-container{
     margin-top: 120px;
+    margin-bottom: 120px;
 }
 .online-games-heading{
     text-align: center;
@@ -187,16 +188,24 @@ nav .right-container ul li a{
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 30px;
+    
+
 }
 
 /* Instantly play */
-.gun-man{
-height: 100%;
-
+.instantly-img-container{
+    position: relative;
 }
 .lady-tom{
-
+    position: absolute;
+    bottom: -9%;
+    left: -22%;
 }
+.gun-man{
+height: 70%;
+}
+
+
 .instantly-text-container h2{
     font-size: 3rem;
     font-weight: 600;
@@ -214,6 +223,7 @@ height: 100%;
 .instantly-text-container{
     margin-left: 199px;
 }
+
 
 
 
@@ -331,13 +341,34 @@ height: 100%;
     }
     .card-warp .card>p {
         font-size: 1rem;
-        margin-right: -20px;
+        padding-left: 50px;
     }
     .instantly-play-container{
         flex-direction: column;
     }
+    .gun-man{
+        width: 70%;
+        margin-left: 20%;
+    }
+    .lady-tom{
+        width: 30%;
+        padding-left: 25%;
+        margin-left: 10%;
+    }
+    .instantly-text-container{
+        text-align: center;
+        margin-right: 50%;
+    }
 
 }
+
+
+
+
+
+
+
+
 
 /* table version */
 @media screen and (min-width:426px)and (max-width:768px) {
@@ -355,7 +386,7 @@ height: 100%;
     }
     .banner-background.right-container img{
         width: 70%;
-        /* margin-left: 50px; */
+        
         
     }
     .gamer-content{
@@ -370,5 +401,24 @@ height: 100%;
     .card-warp .card >img{
         width: 80%;
         margin-left: 70px;
+    }
+    .card-warp .card>p{
+        padding-left: 110px;
+    }
+    .instantly-play-container{
+        flex-direction: column;
+    }
+    .gun-man{
+        width: 70%;
+        margin-left: 20%;
+    }
+    .lady-tom{
+        width: 30%;
+        padding-left: 25%;
+        margin-left: 10%;
+    }
+    .instantly-text-container{
+        text-align: center;
+        margin-right: 20%;
     }
 }
