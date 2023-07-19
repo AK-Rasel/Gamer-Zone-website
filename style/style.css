@@ -40,6 +40,10 @@
     max-width: 1440px;
     margin: 0 auto;
 }
+.secend-size{
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 body{
 /* background-color: #0B0223; */
@@ -173,16 +177,15 @@ nav .right-container ul li a{
     gap: 24px;
 }
 .card-warp .card >img{
-    /* width: 100%; */
     border-radius: 8px;
     margin: 0;
     transition: all 0.3s ease;
     position: relative;
 }
-/* .card-warp .card> img:hover{
-    
 
-} */
+.card{
+    position: relative;
+}
 .card-warp .card >p{
     color: var(--drack-nesh-one);
     font-size: 1.25rem;
@@ -223,58 +226,154 @@ height: 70%;
 .instantly-text-container{
     margin-left: 199px;
 }
+/* game galary */
+.game-galary-backgroun{
+    background-color: var(--white);
+    margin-top: 300px;
+    padding-top: -250px;
+
+}
+.game-galary-backgroun .first-galary {
+    max-width: 1442px;
+    margin: 0 auto;
+
+}
+.first-galary{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    gap: 50px;
+    margin-top: 50px;
+    padding-top: 100px;
+}
+.first-galary div,.secend-galary div{
+    background-color: var(--white);
+    padding: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.first-galary div:hover{
+    border: 1px solid var(--primary-color);
+    background-color: #f9dfff;
+}
+.secend-galary div:hover{
+    border: 1px solid var(--primary-color);
+    background-color: #f9dfff;
+}
+.secend-galary{
+    max-width: 1442px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 50px
+}
+
+.galary-btn{
+    background-color: var(--white);
+    border-radius: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 200px;
+}
+.galary-btn button{
+    padding: 20px auto;
+    padding-left: 50px;
+    border-radius: 35px;
+    margin-right: -35px;
+    border: none;
+    background-color: var(--white);
+    font-size: 1.125rem;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.galary-btn button:hover{
+    background-color: #f9dfff;
+}
+.galary-btn img{
+    position: absolute;
+    left: 6px;
+    cursor: pointer;
+}
 
 
 
 
 
 
+/* footer style */
+.footer-container{
+    text-align: center;
+    padding-top: 30px;
+}
+.footer-background{
+    background-color: #0B0223;
+;
+    padding-bottom: 50px;
+}
+.footer-container .logo{
+    justify-content: center;
+    
+}
+.footer-container .logo img{
+    width: 5%;
+    height: 5%;
+    margin-right: 20px;
+}
+.footer-container .logo h1{
+    color: var(--white);
+}
+.footer-container .logo span{
+    color: var(--primary-color);
+}
+
+.footer-container .all-socials li{
+    list-style: none;
+}
+.footer-container .all-socials ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 25px 5px 0;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-background p{
+    color: var(--white);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
+    margin-top: 28px;
+}
+.privacy-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+}
+.all-services{
+    max-width: 850px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    margin-top: 40px;
+}
+.all-services a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.125rem;
+    transition: all 0.3s ease;
+}
+.all-services a:hover{
+ color: var(--primary-color);
+}
+.privacy-container a{
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
+    text-decoration: none;
+}
 
 
 
@@ -360,14 +459,26 @@ height: 70%;
         margin-right: 50%;
     }
 
+    .footer-container .logo img{
+        width: 15%;
+        height: 15%;
+    }
+    .privacy-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+    .all-services{
+        grid-template-columns: 1fr 1fr ;
+        gap: 18px;
+    }
+    .first-galary,
+    .secend-galary{
+        max-width: 400px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr ;
+        gap: 10px;
+    }
 }
-
-
-
-
-
-
-
 
 
 /* table version */
@@ -420,5 +531,21 @@ height: 70%;
     .instantly-text-container{
         text-align: center;
         margin-right: 20%;
+    }
+    .all-services{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 18px;
+    }
+    .first-galary{
+        max-width: 400px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr ;
+        gap: 10px;
+    }
+    .secend-galary{
+        max-width: 400px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr ;
+        gap: 10px;
     }
 }
